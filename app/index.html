@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>Simon Says</title>
+    <meta name="description" content="Simple Simon Game">
+    <meta name="author" content="Michael Symmes">
+
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <section>
+            <div class="row">
+                <button id="blue"></button>
+            </div>
+            <div class="row">
+                <button id="red"></button>
+                <div id="control-container">
+                <h5>Simon</h5>
+                <div id="controls">
+                    <div class="control">
+                    <div id="count"></div>
+                    <label>Count</label>
+                    </div>
+                    <div class="control">
+                    <div id="start_button"></div>
+                    <label>Start</label>
+                    </div>
+                    <div class="control">
+                    <div id="strict_mode"></div>
+                    <label>Strict Mode</label>
+                    </div>
+                </div>
+                <div class="control">
+                    <label class="switch">
+                    <input type="checkbox" id="power_button">
+                    <span class="slider round"></span>
+                    </label> 
+                </div>
+                <label>Off/On</label>
+                </div>
+                <button id="green"></button>
+            </div>
+            <div class="row">
+                <button id="yellow"></button>
+            </div>
+            </section>
+        <script src="simon.js"></script>
+    </body>
+</html>

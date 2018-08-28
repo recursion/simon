@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 600px;
+  padding: 5px;
+}
+h5 {
+  letter-spacing: 0.15em;
+  font-size: 2em;
+  padding: 0;
+  margin: 5px auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 500px;
+}
+#control-container {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+#controls {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+label {
+  text-align: center;
+  margin: 0 auto;
+}
+.control {
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.08em;
+}
+
+#count {
+  border: 1px solid white;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 50px;
+  height: 25px;
+  padding: 2px;
+  text-align: right;
+  font-weight: bold;
+  background-color: darkgrey;
+  color: red;
+}
+#start_button {
+  border: 1px solid darkgrey;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-color: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#start_button:hover {
+  background-color: darkred;
+}
+#start_button:active {
+  background-color: white;
+}
+#strict_mode {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border: 1px solid darkgrey;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+#strict_mode:hover {
+  background-color: goldenrod;
+}
+#strict_mode:active {
+  background-color: white;
+}
+#blue {
+  width: 500px;
+  height: 100px;
+  background-color: darkblue;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+#blue.lit {
+  background-color: blue !important;
+}
+
+#red {
+  width: 100px;
+  height: 300px;
+  background-color: darkred;
+}
+#red.lit {
+  background-color: red !important;
+}
+#green {
+  width: 100px;
+  height: 300px;
+  background-color: darkgreen;
+}
+#green.lit {
+  background-color: green !important;
+}
+#yellow {
+  width: 500px;
+  height: 100px;
+  background-color: goldenrod;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#yellow.lit {
+  background-color: yellow !important;
+}
+
+/* 
+  Css slider from:
+  https://www.w3schools.com/howto/howto_css_switch.asp 
+*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
